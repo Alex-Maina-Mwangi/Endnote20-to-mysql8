@@ -33,4 +33,5 @@ sed -i -e 's/subkey BLOB/subkey INTEGER/g' $file
 #Remove line 2 because the table pdbmigrate.sqlite_sequence' doesn't exist
 sed -i '2d' $file
 
+#create a new file pdbmigrate.sql
 cat $file >> pdbmigrate.sql
