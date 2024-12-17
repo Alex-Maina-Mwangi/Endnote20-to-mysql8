@@ -18,11 +18,13 @@ if [ -f "pdbtestdump.txt" ] ; then
 fi
 
 #error 1
+#remove the first three lines from pdbtestdump.sql
 tail -n+3 pdbtestdump.sql >> pdbtestdump.txt
 file=pdbtestdump.txt
 sed -i -e 's/DEFAULT ""/ /g' $file
 
 #error 2
+#change SQLite3 syntax for auto increment to that of MySQL
 sed -i -e 's/AUTOINCREMENT/AUTO_INCREMENT/g' $file
 
 #change subkey BLOB to subkey INTEGER
