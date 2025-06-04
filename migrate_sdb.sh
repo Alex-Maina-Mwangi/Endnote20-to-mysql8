@@ -1,4 +1,7 @@
+
 #!/bash/bin
+#Bash script to transform Endnote .sdb data into MySQL 8
+#Written by Alex Maina - KEMRI-Wellcome Trust Research Probramme
 sqlite3 /home/alex/Downloads/latest08042024/sdb.eni .dump > testdump.sql
 
 #error 1
