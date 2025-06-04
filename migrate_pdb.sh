@@ -1,4 +1,6 @@
 #!/bash/bin
+#Bash script to transform Endnote .pdb data into MySQL 8
+#Written by Alex Maina - KEMRI-Wellcome Trust Research Probramme
 
 
 #remove pdbmigrate.sql file if it already exists
